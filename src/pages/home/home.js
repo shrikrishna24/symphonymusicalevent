@@ -55,12 +55,14 @@ export default function Home() {
 			<div className="container">
 				<div className="content">
 					<div className="content-heading">
-						<h1>Symphony Musical </h1>
+						<HeadText title={'Symphony Musical'} type={'heading'} headingclass='artist-name' />
+
 						<h2>Events</h2>
 					</div>
+
 					<div className="content-info">
-						<h2>Tribute to The Legend R.D.BURMAN</h2>
-						<div className="content-seprator"></div>
+						<HeadText title={'Tribute to The Legend R.D.BURMAN'} type={'subheading'} headingclass='artist-name' />
+					<div className="content-seprator"></div>
 						<p>
 							Explore and book a diverse range of musical events, from classical
 							concerts to contemporary performances. Let the notes of passion

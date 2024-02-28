@@ -8,14 +8,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+    align-items: center;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
-    gap: 25px;
+    gap: 70px;
 }
 
-.content h1{
-    font-size: 100px;
-    color: var(--white);
-}
 
 .content h2 {
     font-size: 90px;
@@ -32,8 +29,7 @@
 .content-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 100px;
+    width: 58%;
     gap: 15px;
 }
 
@@ -42,9 +38,10 @@
     color: var(--white);
 }
 .content-info p {
+    font-size: 18px;
     color: var(--white);
-    width: 70%;
-    flex-wrap: wrap;
+    line-height: 30px;
+    width: 80%;
 }
 
 .content-seprator {
