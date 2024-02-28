@@ -152,10 +152,9 @@ export default function Home() {
 				</div>
 				<div className="sponsors">
 					<div className="sponser-container">
-						<HeadText
-							title={"Special Thanks to Our Sponsors"}
-							type={"heading"}
-						/>
+
+						<h1>Special Thanks to Our Sponsors</h1>
+
 						<div className="sponsor-content">
 							{sponsors.map((items, index) => (
 								<Media source={items.src} width={"200px"} height={"200px"} />

@@ -16,9 +16,12 @@
     gap: 20px;
 }
 
-.footer-1 h1 {
-    width: 60%;
+
+.footer-head h2{
+    color: white;
+    font-weight: 400;
     text-align: center;
+    font-size: 30px1;
 }
 
 .footer-2 {

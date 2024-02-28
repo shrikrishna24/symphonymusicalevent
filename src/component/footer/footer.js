@@ -8,12 +8,16 @@ export default function Footer() {
 	return (
 		<div className="footer">
 			<div className="footer-1">
-				<img
-					src={require("../../assets/home/Logo_SME-removebg-preview-copy-150x.png")}
-				/>
-				<h1>
-					Experience & Discover Unforgettable Musical Events with Symphony
-				</h1>
+				<img src={require("../../assets/home/Logo_SME-removebg-preview-copy-150x.png")} height={'150px'} width={'150px'} />
+
+				<div className="footer-head">
+
+					<h2>Experience & Discover Unforgettable</h2>
+
+					<h2> Musical Events with Symphony</h2>
+
+				</div>
+
 			</div>
 			<div className="footer-2">
 				<div className="footer-socials">
