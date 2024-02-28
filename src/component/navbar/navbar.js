@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-// import Image from "../image/image";
-import { FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
 import Hamburger from "../hamburger/hamburger";
 import Button from '../button/button'
+import Media from "../media/media";
 export default function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
   const [isBurgerClicked, setIsBurgerClicked] = useState(false);
@@ -52,12 +51,11 @@ export default function Navbar() {
     <nav>
       <div className="nav-image">
         <NavLink to="/">
-          {/* <Image
-          source={require("../../assets/WeatherCast_-_logo-removebg-preview.png")}
-          width={"120px"}
-          height={"120px"}
-        /> */}
-          'Home'
+          <Media
+          source={require("../../assets/home/Logo_SME-removebg-preview-copy-150x.png")}
+          width={"60px"}
+          height={"60px"}
+        />
         </NavLink>
       </div>
 

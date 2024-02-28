@@ -1,0 +1,62 @@
+.contact {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #333132;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-upper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-upper h2 {
+    font-size: 32px;
+    color: var(--white);
+}
+.contact-upper p {
+    width: 70%;
+    flex-wrap: wrap;
+    color: var(--white);
+}
+
+.contact-seprator {
+    border-radius: 15px;
+    width: 100%;
+    background-color: var(--white);
+    height: 2px;
+}
+
+.contact-lower {
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form label {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form button {
+    width: 225px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}

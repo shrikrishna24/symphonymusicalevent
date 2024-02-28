@@ -1,0 +1,55 @@
+/* input.css */
+
+.input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-content {
+    position: relative;
+  }
+  
+  .input-icons {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field.unhovered {
+    background-color: #f0f0f0;
+  }
+  
+  .input-checkbox input[type='checkbox'] {
+    margin-right: 5px;
+  }
+  
+  .password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .password-btn:focus {
+    outline: none;
+  }
+  
+  /* You may need to adjust the styles for the eye icons */
+  
