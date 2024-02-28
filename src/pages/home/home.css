@@ -150,31 +150,27 @@
 	height: 100dvh;
 	display: flex;
 	flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .artist-info {
     width: 60%;
 	display: flex;
 	flex-direction: column;
-    margin-left: 120px;
+    justify-content: center;
     gap: 30px;
-    margin-top: 60px;
 }
 
-.artist-info h1 {
-    font-size: 70px;
-    font-weight: 500;
-    color: var(--white);
-}
 
 .artist-seprator {
 	border-radius: 15px;
-	width: 70%;
 	background-color: var(--white);
 	height: 2px;
 }
 
 .artistss-list{
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 60px;
@@ -201,10 +197,9 @@
 
 .artist-child {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .rolling-images {

@@ -116,8 +116,10 @@ export default function Home() {
 				</div>
 				<div className="artist">
 					<div className="artist-info">
-						<h1>Meet Artist's</h1>
+						<HeadText title={"Meet Artist's"} type={'heading'} />
+
 						<div className="artist-seprator"></div>
+
 						<div className="artistss-list">
 							{artistss.map((item, index) => {
 								return (
@@ -134,7 +136,7 @@ export default function Home() {
 							})}
 						</div>
 					</div>
-					<div className="artist-child">
+					<div className="artist-child" >
 						<Button btnTitle={"View All artists"} />
 					</div>
 				</div>
