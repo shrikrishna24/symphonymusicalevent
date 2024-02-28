@@ -62,7 +62,7 @@ export default function Home() {
 
 					<div className="content-info">
 						<HeadText title={'Tribute to The Legend R.D.BURMAN'} type={'subheading'} headingclass='artist-name' />
-					<div className="content-seprator"></div>
+						<div className="content-seprator"></div>
 						<p>
 							Explore and book a diverse range of musical events, from classical
 							concerts to contemporary performances. Let the notes of passion
@@ -87,9 +87,11 @@ export default function Home() {
 				</div>
 				<div className="about">
 					<div className="about-content">
-						<h1>About Us</h1>
+						<HeadText title={'About Us'} type={'heading'} headingclass='artist-name' />
+
 						<div className="seprator"></div>
-						<p>
+
+						<p className="about-text">
 							Welcome to Symphony Musical Events, where the magic of music comes
 							to life. At Symphony, we believe that every note has the power to
 							create unforgettable moments. Whether you’re a lover of classical
@@ -99,8 +101,10 @@ export default function Home() {
 							featuring talented artists and musicians who will captivate your
 							senses and transport you to another realm.
 						</p>
-						<h4>Mr. Vikas Bhosekard</h4>
-						<h3>Event Organizer</h3>
+
+						<HeadText title={'Mr. Vikas Bhosekard'} type={'subheading'} headingclass='artist-name' />
+
+						<p className="evemt-org">Event Organiser</p>
 					</div>
 				</div>
 				<div className="event">
