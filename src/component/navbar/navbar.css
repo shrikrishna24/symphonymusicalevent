@@ -74,14 +74,13 @@ nav {
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 80px;
-    left: 1;
+    top: 90px;
+    left: 0;
     background-color: var(--secondary);
     transition: transform 0.3s ease; /* Add a smooth transition */
     width: 100%;
     padding:0px 0 20px 0;
     z-index: 999;
-    box-shadow: 1px 10px 89px 18px rgba(0,0,0,0.91);
 
 
   }
