@@ -1,0 +1,39 @@
+.content{
+    background-image: url('../../assets/home/rd-burman-759.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tribute{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+.tribute-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.sponsor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-content{
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+}

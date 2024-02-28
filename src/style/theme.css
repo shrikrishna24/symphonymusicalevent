@@ -1,0 +1,32 @@
+:root {
+    --primary: #d60f1d;
+    --secondary: #141414;
+    --white:   #ffffff;
+    --yellow:#fbe308
+  
+   /* SHADOW AND  BORDERS */
+   --shadow: -3px 10px 22px -10px rgba(0, 0, 0, 0.74);
+   --radius: 4px;
+  
+   /* EFFECT */
+   --hover-effect : background-color 0.3s ease, color 0.1s ease;
+  
+  
+    /*INPUT THEME*/
+    --input-bg: #f2f2f23d;
+    --input-hover:  #dcdfe277;
+    --input-border:   rgb(207, 207, 207);
+  
+    
+    /*BUTTON THEME*/
+    --btn-primary:#d60f1d;
+    --btn-secondary: #141414;
+    --btn-text:  #ffffff;
+    --btn-primary-hover:  #ffffff;
+    --btn-secondary-hover: #c479091e;
+  
+  
+    /*DROPDOWN THEME*/
+    --dropdown-bg: #f2f2f2;
+    --dropdown-hover: #ced4da;
+  }
