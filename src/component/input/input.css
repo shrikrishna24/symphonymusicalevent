@@ -1,55 +1,51 @@
-/* input.css */
+.input-content{
+  position: relative;
+}
+.input-icons{
+  color: black;
+  position: absolute;
+  top: 10px;
+  left:12.5px 
+}
 
-.input-container {
-    margin-bottom: 15px;
-  }
-  
-  .input-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .input-content {
-    position: relative;
-  }
-  
-  .input-icons {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .input-field.unhovered {
-    background-color: #f0f0f0;
-  }
-  
-  .input-checkbox input[type='checkbox'] {
-    margin-right: 5px;
-  }
-  
-  .password-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .password-btn:focus {
-    outline: none;
-  }
-  
-  /* You may need to adjust the styles for the eye icons */
-  
+.input-field,.unhovered {
+  width: 100%;
+  background-color: var(--input-bg);
+  color: black;
+  text-align: left;
+  outline: none;
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 500;
+  padding:14px 14px 14px 11px;
+}
+
+.input-checkbox{
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+}
+
+.input-field:hover {
+  background-color: var(--input-hover);
+}
+
+.input-label{
+  color: yellow;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 1px;
+  padding-bottom: 10px;
+}
+
+.password-btn {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: var(--text-secondary);
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -10,13 +10,13 @@ export default function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const data = new FormData(e.target);
-        const value = Object.fromEntries(data.entries());
-        const body = {
-            fullName: value.fullName,
-            email: value.email,
-            subject: value.subject,
-            message: value.message,
-        };
+		const value = Object.fromEntries(data.entries());
+		const body = {
+			fullName: value.fullName,
+			email: value.email,
+			subject: value.subject,
+			message: value.message,
+		};
 	}
 
 	return (
@@ -36,8 +36,8 @@ export default function Contact() {
 						<TextBox inputName="fname" inputLabel={'First Name*'} placeholder={"Enter Your First Name"} />
 						<TextBox inputName="lname" inputLabel={'Last Name*'} placeholder={"Enter Your Last Name"} />
 					</div>
-					<TextBox inputName="email" inputLabel={'Email*'} inputType="email" placeholder={"Enter Your Email"} inputDivClass='contact-field'/>
-					<TextBox inputName="message" inputLabel={'Message'} placeholder={"Enter Your Message"} inputDivClass='contact-field'/>
+					<TextBox inputName="email" inputLabel={'Email*'} inputType="email" placeholder={"Enter Your Email"} inputDivClass='contact-field' />
+					<TextBox inputName="message" inputLabel={'Message'} placeholder={"Enter Your Message"} inputDivClass='contact-field' />
 					<Button btnTitle="submit" btntype={'submit'} />
 				</form>
 
