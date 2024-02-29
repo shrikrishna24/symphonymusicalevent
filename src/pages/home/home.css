@@ -135,14 +135,13 @@
     align-items: center;
     justify-content: center;
     background-color: #333132;
+    gap: 50px;
 }
 
-.event h1 {
-    font-size: 70px;
-}
+
 
 .event-info {
-    width: 80%;
+    width: 60%;
     display: flex;
 }
 
@@ -168,12 +167,9 @@
     font-weight: 500;
 }
 
-.event-right h6 {
-    font-size: 20px;
-}
-
 .event-right p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .event-right > div {
@@ -182,15 +178,7 @@
     align-items: center;
     justify-content: center;
 }
-.event-right button {
-    width: 150px;
-    height: 45px;
-    background-color: #d70e1e;
-    border: none;
-    color: var(--white);
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .event-left {
     width: 50%;

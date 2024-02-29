@@ -3,94 +3,11 @@ import './event.css';
 import Media from '../../component/media/media';
 import HeadText from '../../component/header/header';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import Button from '../../component/button/button';
+
 
 export default function Event() {
-  const artist = [
-    {
-      path: require('../../assets/artists/Artist-4-copybewbew.png'),//done
-      designation: 'Singer | Organiser',
-      name: 'Vikas Bhosekar',
-    },
-    {
-      path: require('../../assets/artists/Artist-3.png'), //done
-      designation: 'Singer',
-      name: 'Preeti Joshi',
-    },
-    {
-      path: require('../../assets/artists/Artist-2.png'),//done
-      designation: 'Anchor',
-      name: 'RJ Amit',
-    },
-    {
-      path: require('../../assets/artists/Artist-4-copy.png'), //done
-      designation: 'Music Arrange',
-      name: 'Sanjay Devde',
-    },
-    {
-      path: require('../../assets/artists/Artist-15.png'), //done
-      designation: 'Singer | Organiser',
-      name: 'Dr. Prashant Gaikwad',
-    }, {
-      path: require('../../assets/artists/Artist-new-copy.png'),//done
-      designation: 'Singer',
-      name: 'Pankaj Bansode',
-    }, {
-      path: require('../../assets/artists/Artist-6.png'),//done
-      designation: 'Singer',
-      name: 'Vidyadhar Waghmare',
-    }, {
-      path: require('../../assets/artists/Artist-7.png'),//done
-      designation: 'Singer',
-      name: 'Smita Badrige',
-    }, {
-      path: require('../../assets/artists/Artist-12.png'),//done
-      designation: 'Dholak Handsonick',
-      name: 'Prakash Gaikwad',
-    }, {
-      path: require('../../assets/artists/Artist-9.png'),//done
-      designation: 'Percussion',
-      name: 'Suryakant gaikwad',
-    }, {
-      path: require('../../assets/artists/Artist-8.png'), //done
-      designation: 'Singer',
-      name: 'Mansi Dabhade',
-    },
-    {
-      path: require('../../assets/artists/Artist-11.png'),//dome
-      designation: 'Singer',
-      name: 'Narendra Sakte',
-    },
-    {
-      path: require('../../assets/artists/Artist-13.png'),//done
-      designation: 'Sexophon',
-      name: 'Sagar Mhaske',
-    },
-    {
-      path: require('../../assets/artists/Artist-16.png'),//done
-      designation: 'Singer',
-      name: 'Smadhan Pawar',
-    },
-    {
-      path: require('../../assets/artists/Artist-14.png'), //done
-      designation: 'Drumer',
-      name: 'Sahil Mishra',
-    },
-    {
-      path: require('../../assets/artists/Artist-4-copyneww.png'),//done
-      designation: 'Singer',
-      name: 'Sangita Thakre',
-    },
-    {
-      path: require('../../assets/artists/Artist-4-copyneWWnew.png'),//done
-      designation: 'Singer',
-      name: 'Girish Shewani',
-    },
-    {
-      path: require('../../assets/artists/Artist-4-copybew.png'),//done
-      designation: 'Singer',
-      name: 'Ashok Arya',
-    },
-  ]
+
 
   return (
     <>
@@ -98,13 +15,32 @@ export default function Event() {
         <HeadText title={"Event's"} type={'heading'} headingclass={'event-head'} />
       </div>
 
-      <div className='event-content'>
+      <div className="event">
+						<HeadText
+							title={"Join Our Latest Events"}
+							type={"heading"}
+							headingclass="artist-name"
+						/>
 
-        <div></div>
+					<div className="event-info">
+						<div className="event-left">
+							<img
+								src={require("../../assets/home/WhatsApp-Image-2023-10-17-at-4.26.46-PM-3-819x1024.jpeg")}
+								height={"500px"}
+								width={"450px"}
+							/>
+						</div>
+						<div className="event-right">
+							<p>Home / Music Shows / Live Music Event – Kalyan, 2024</p>
+							<h2>Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da</h2>
+							<h2 className="amount">₹400 - ₹500</h2>
+							<h6>Location : Kalyan (W)</h6>
+							<p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
+							<Button btnTitle={"BOOK TICKETS"} />
 
-        <div></div>
-
-      </div>
+						</div>
+					</div>
+				</div>
 
     </>
   )

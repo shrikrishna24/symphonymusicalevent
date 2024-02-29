@@ -124,7 +124,12 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="event">
-					<h1>Join Our Latest Events</h1>
+						<HeadText
+							title={"Join Our Latest Events"}
+							type={"heading"}
+							headingclass="artist-name"
+						/>
+
 					<div className="event-info">
 						<div className="event-left">
 							<img
@@ -134,12 +139,13 @@ export default function Home() {
 							/>
 						</div>
 						<div className="event-right">
-							<h5>Home / Music Shows / Live Music Event – Kalyan, 2024</h5>
+							<p>Home / Music Shows / Live Music Event – Kalyan, 2024</p>
 							<h2>Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da</h2>
 							<h2 className="amount">₹400 - ₹500</h2>
 							<h6>Location : Kalyan (W)</h6>
 							<p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
-							<div><button>Book Tickets</button></div>
+							<Button btnTitle={"BOOK TICKETS"} />
+
 						</div>
 					</div>
 				</div>

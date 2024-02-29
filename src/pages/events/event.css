@@ -1,11 +1,11 @@
 
 .event-img {
     background-image: linear-gradient(180deg, rgba(52, 50, 51, 0.1) 0%, #222222 100%), url('../../assets/artists/musician-fog-playing-saxophone.jpg');
-    background-size: cover; /* Optional: Adjust the size of the background image */
-    background-position: center; /* Optional: Adjust the position of the background image */
-    height: 40vh;
-    position: sticky;
-    top: 0;
+    background-size: cover;
+    background-position: center; 
+    background-position: center;
+	background-attachment: fixed;
+    height: 45vh;
 }
 
 
