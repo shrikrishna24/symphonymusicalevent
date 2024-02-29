@@ -59,9 +59,8 @@ export default function Home() {
 							title={"Symphony Musical"}
 							type={"heading"}
 							headingclass="artist-name"
+							spanTitle={'Events'}
 						/>
-
-						<h2>Events</h2>
 					</div>
 
 					<div className="content-info">
@@ -89,9 +88,7 @@ export default function Home() {
 						/>
 						<HeadText title={"Date : 07-01-2024 Time: 8:30pm Onwards"} />
 					</div>
-					<div className="nav-socials">
-						<Button btnTitle={"BOOK TICKETS"} btnClass={"btn-secondary"} />
-					</div>
+					<Button btnTitle={"BOOK TICKETS"} btnClass={"btn-secondary"} />
 				</div>
 				<div className="about">
 					<div className="about-content">
@@ -124,11 +121,11 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="event">
-						<HeadText
-							title={"Join Our Latest Events"}
-							type={"heading"}
-							headingclass="artist-name"
-						/>
+					<HeadText
+						title={"Join Our Latest Events"}
+						type={"heading"}
+						headingclass="artist-name"
+					/>
 
 					<div className="event-info">
 						<div className="event-left">
@@ -140,7 +137,8 @@ export default function Home() {
 						</div>
 						<div className="event-right">
 							<p>Home / Music Shows / Live Music Event – Kalyan, 2024</p>
-							<h2>Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da</h2>
+							<HeadText title={"Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da"} type={"subheading"} headingclass="event-subheading" />
+							<h2></h2>
 							<h2 className="amount">₹400 - ₹500</h2>
 							<h6>Location : Kalyan (W)</h6>
 							<p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
@@ -187,18 +185,19 @@ export default function Home() {
 				</div>
 				<div className="sponsors">
 					<div className="sponser-container">
-						<h1>Special Thanks to Our Sponsors</h1>
+						<HeadText title={"Special Thanks to Our Sponsors"} type={"heading"} />
 
 						<div className="sponsor-content">
+
 							{sponsors.map((items, index) => (
-								<Media source={items.src} width={"200px"} height={"200px"} />
-							))}
-							{sponsors.map((items, index) => (
-								<HeadText
-									title={items.title}
-									type={"subheading"}
-									headingclass="artistss-name"
-								/>
+								<div key={index}>
+									<Media source={items.src} width={"200px"} height={"200px"} />
+									<HeadText
+										title={items.title}
+										type={"subheading"}
+										headingclass="artistss-name"
+									/>
+								</div>
 							))}
 						</div>
 					</div>

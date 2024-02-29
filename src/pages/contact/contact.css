@@ -1,6 +1,6 @@
 .contact {
-    height: 100dvh;
     display: flex;
+    padding: 40px 0;
     flex-direction: column;
     background-color: #333132;
     align-items: center;

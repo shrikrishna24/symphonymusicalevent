@@ -26,6 +26,10 @@
     justify-content: center;
 }
 
+.content-heading h1{
+    text-align: center;
+}
+
 .content-info {
     display: flex;
     flex-direction: column;
@@ -75,12 +79,12 @@
 
 
 .about {
+	height: 100dvh;
 	background-image: linear-gradient(180deg, rgba(52, 50, 51, 0.1) 0%, #222222 100%), url("../../assets/home/ss1-copy.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100dvh;
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -129,7 +133,7 @@
 }
 
 .event {
-    height: 100dvh;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,11 +142,10 @@
     gap: 50px;
 }
 
-
-
 .event-info {
     width: 60%;
     display: flex;
+    gap: 30px;
 }
 
 .event-right {
@@ -159,12 +162,19 @@
 
 .event-right h2 {
     font-size: 40px;
+    font-weight: 600;
 }
 
 .amount {
     font-size: 40px;
     color: #e7e030;
     font-weight: 500;
+}
+
+
+.event-subheading{
+    font-weight: 600;
+    font-size: 34px;
 }
 
 .event-right p {
@@ -190,11 +200,11 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 100dvh;
 	display: flex;
 	flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 70px 0;
 }
 
 .artist-info {
@@ -274,15 +284,139 @@
     gap: 50px;
 }
 
-.sponser-container h1 {
-    font-size: 60px;
-    font-weight: 400;
-}
 
 .sponsor-content {
 	align-self: center;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3,1fr);
     column-gap: 100px;
     row-gap: 20px;
+}
+
+.sponsor-content .artistss-name{
+    margin-top: 10px;
+    text-align: center !important;
+}
+
+.event-right button{
+    margin-top: 20px;
+}
+
+@media screen and (width<=1300px) {
+
+    .event-info {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-left{
+        width: auto;
+        align-items: center;
+    }
+
+
+    .event-right{
+        width: 60%;
+    }
+    .event-right p{
+        text-align: justify;
+    }
+    .artistss-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }    
+}
+
+@media screen and (width<=1110px) {
+
+    .content, .about {
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .tribute {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+}
+
+@media screen and (width<=900px) {
+
+    .sponsor-content{
+        grid-template-columns:1fr;
+        align-items: center;
+    }
+
+    .artistss-name{
+        text-align: center;
+    }
+
+    .event-subheading{
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (width<=700px) {
+
+    .about-content h1 {
+        margin: 0;
+    }
+    
+    .tribute-content {
+        padding: 0;
+    }
+    
+    .event h1{
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .artistss-list{
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }    
+
+    .artistss-name{
+        text-align: left;
+    }    
+
+    
+    .event-left img{
+     width: 350px;   
+     height: 450px;
+    }
+
+    .event-subheading{
+        font-size: 29px;
+    }
+}
+
+@media screen and (width<=450px) {
+
+    .content-info {
+        width: 80%;   
+        text-align: justify;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .event-left img{
+        width: 250px;   
+        height: 350px;
+    }
+
+    .event-right {
+        width: 80%;
+    }
+
+    .event-subheading{
+        font-size: 28px;
+    }
+
 }

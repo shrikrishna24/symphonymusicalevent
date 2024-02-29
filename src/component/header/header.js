@@ -1,7 +1,7 @@
 import React from "react";
 import './header.css'
 
-export default function HeadText({ title, type, headingclass }) {
+export default function HeadText({ title, type, headingclass,spanTitle }) {
     let TagName;
 
     if (type === 'heading') {
@@ -17,9 +17,7 @@ export default function HeadText({ title, type, headingclass }) {
 
     return (
         <div>
-            <TagName className={headingclass}>
-                {title}
-            </TagName>
+            <TagName className={headingclass}>{title}<span className="span-header">{spanTitle}</span></TagName>
         </div>
     );
 }

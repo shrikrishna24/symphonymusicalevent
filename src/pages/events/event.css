@@ -28,3 +28,11 @@
     align-items: center;
     padding: 100px 40px 100px 40px;
 }
+
+
+@media screen and (width<=650px) {
+
+    .event-img {
+        display: none;
+    }
+}
