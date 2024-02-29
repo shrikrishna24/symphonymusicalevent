@@ -1,8 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FaFacebook } from "react-icons/fa";
-import { FaGoogle } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGoogle, FaInstagram, FaLinkedin } from "react-icons/fa";
 import HeadText from '../../component/header/header'
 export default function Footer() {
 	return (
@@ -21,15 +19,18 @@ export default function Footer() {
 			</div>
 			<div className="footer-2">
 				<div className="footer-socials">
-					<FaFacebook className="social-icon" />
-					<FaGoogle className="social-icon" />
-					<FaInstagram className="social-icon" />
+					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Symphony-musical-events/61553212043405/" className="social-icon"><FaFacebook size={25} /></a>
+					<a target="_blank" rel="noopener noreferrer" href="" className="social-icon"><FaGoogle size={25} /></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/symphonymusicalevent/" className="social-icon"><FaInstagram size={25} /></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsymphonymusicalevent.com%2Fevent%2Fnew%2F" className="social-icon"><FaLinkedin size={25} /></a>
+
+
 				</div>
 				<ul className="terms">
-					<li>Terms & Conditions</li>
+					<li>Privacy Policy</li>
 					<li>No Return Policy</li>
 					<li>Cancellation and Refund Policy</li>
-					<li>Privacy Policy</li>
+					<li>Terms & Conditions</li>
 				</ul>
 			</div>
 			<div className="footer-3">
