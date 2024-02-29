@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./home.css";
 import HeadText from "../../component/header/header.js";
 import Button from "../../component/button/button.js";
@@ -8,6 +8,7 @@ import ri2 from "../../assets/home/bg-02-free-img.jpg";
 import ri3 from "../../assets/home/gallery-03-free-img.jpg";
 import ri4 from "../../assets/home/gallery-04-free-img.jpg";
 import ri5 from "../../assets/home/gallery-05-free-img.jpg";
+import { NavLink } from 'react-router-dom';
 
 const images = [ri1, ri2, ri3, ri4, ri5];
 
@@ -88,7 +89,9 @@ export default function Home() {
 						/>
 						<HeadText title={"Date : 07-01-2024 Time: 8:30pm Onwards"} />
 					</div>
-					<Button btnTitle={"BOOK TICKETS"} btnClass={"btn-secondary"} />
+					<NavLink to={'/booking'}>
+						<Button btnTitle={"BOOK TICKETS"} btnClass={"btn-secondary"} />
+					</NavLink>
 				</div>
 				<div className="about">
 					<div className="about-content">
@@ -142,8 +145,9 @@ export default function Home() {
 							<h2 className="amount">₹400 - ₹500</h2>
 							<h6>Location : Kalyan (W)</h6>
 							<p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
-							<Button btnTitle={"BOOK TICKETS"} />
-
+							<NavLink to={'/booking'}>
+								<Button btnTitle={"BOOK TICKETS"} />
+							</NavLink>
 						</div>
 					</div>
 				</div>
@@ -170,7 +174,9 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="artist-child">
+					<NavLink to={'/artist'}>
 						<Button btnTitle={"View All artists"} />
+					</NavLink>
 					</div>
 				</div>
 				<div className="rolling-images">

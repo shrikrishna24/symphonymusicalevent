@@ -52,10 +52,10 @@ export default function Navbar() {
       <div className="nav-image">
         <NavLink to="/">
           <Media
-          source={require("../../assets/home/Logo_SME-removebg-preview-copy-150x.png")}
-          width={"60px"}
-          height={"60px"}
-        />
+            source={require("../../assets/home/Logo_SME-removebg-preview-copy-150x.png")}
+            width={"60px"}
+            height={"60px"}
+          />
         </NavLink>
       </div>
 
@@ -76,7 +76,9 @@ export default function Navbar() {
       </div>
 
       <div className="nav-socials">
-        <Button btnTitle={"BOOK TICKETS"} />
+        <NavLink to={'/booking'}>
+          <Button btnTitle={"BOOK TICKETS"} />
+        </NavLink>
       </div>
 
       <Hamburger Click={isBurgerClicked ? hideNavbar : showNavbar} open={isBurgerClicked} />

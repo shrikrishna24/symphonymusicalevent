@@ -1,13 +1,33 @@
 import React, { useState } from 'react'
-import './bookings.css';
+import './booking.css';
 import Media from '../../component/media/media';
 import HeadText from '../../component/header/header';
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Button from '../../component/button/button';
 
+import { FaRectangleList, FaLocationDot } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
+import { IoTime } from "react-icons/io5";
 
 export default function Event() {
 
+
+    const eventDetails = [
+        {
+            icon: <FaCalendarAlt size={30} />,
+            label: 'Event Date : ',
+            values: 'January 7,2024'
+        },
+        {
+            icon: <IoTime size={30} />,
+            label: 'Event time : ',
+            values: '8:00 pm'
+        },
+        {
+            icon: <FaLocationDot size={30} />,
+            label: 'Event Location : ',
+            values: 'Mumbai'
+        }
+    ]
 
     // Define static amount
     const staticAmount = 1; // You can change this value as needed
@@ -45,59 +65,33 @@ export default function Event() {
     };
 
     return (
-        <>
-            <div className='event-img'>
-                <HeadText title={"Event's"} type={'heading'} headingclass={'event-head'} />
+        <form className='booking-event'>
+            <HeadText title={"Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da"} type={"subheading"} headingclass="event-subheading" />
+
+            <Media source={require('../../assets/booking-event/seats.jpeg')} />
+
+            <div className='booking-by'>
+                <FaRectangleList size={30} />
+                <p>By : Prashant gaikwad, Vikas Bhosekar</p>
             </div>
 
-            <div className="event">
-                <HeadText
-                    title={"Join Our Latest Events"}
-                    type={"heading"}
-                    headingclass="artist-name"
-                />
-
-                <div className="event-info">
-                    <div className="event-left">
-                        <img
-                            src={require("../../assets/home/WhatsApp-Image-2023-10-17-at-4.26.46-PM-3-819x1024.jpeg")}
-                            height={"500px"}
-                            width={"450px"}
-                        />
-                    </div>
-                    <div className="event-right">
-                        <p>Home / Music Shows / Live Music Event – Kalyan, 2024</p>
-                        <h2>Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da</h2>
-                        <h2 className="amount">₹400 - ₹500</h2>
-                        <h6>Location : Kalyan (W)</h6>
-                        <p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
-                        <Button btnTitle={"BOOK TICKETS"} />
-
-                    </div>
-                </div>
+            <div className='booking-details'>
+                {eventDetails.map((item, index) => {
+                    return (
+                        <div key={index}>
+                            <div className='booking-icons'>{item.icon}</div>
+                            <div>
+                                <p className='bdetails-label'>{item.label}</p>
+                                <p className='bdetails-value'>{item.values}</p>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
 
-            <div className='container'>
-                <h2>Book Now</h2>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label>dhruv</label>
-                        {/* <input type="text" value={name} onChange={(e) => setName(e.target.value)} /> */}
-                    </div>
-                    <div>
-                        <label>dhruv.patel1670@gmail.com</label>
-                        {/* <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /> */}
-                    </div>
-                    <div>
-                        <label>9167008384</label>
-                        {/* <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} /> */}
-                    </div>
-                    <div>
-                        <Button btnTitle={"Submit"} btnClass={"btn-secondary"} />
-                    </div>
-                </form>
-            </div>
+            <p className='booking-text'>Step into the new year with the rhythmic beats and timeless melodies of the Tribute to R.D Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations , let the soulful tunes transport you to an era of musical brilliance , promising a harmonious blend of nostalgia and celebrations as we welcome the dawn of a promising year ahead.</p>
 
-        </>
+            <Button btnTitle={'Register'} />
+        </form>
     )
 }

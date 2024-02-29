@@ -1,0 +1,122 @@
+.booking-event{
+    background-color: #333132;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 40px;
+}
+
+.booking-by{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    background-color: var(--primary);
+}
+
+.booking-details{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.booking-details>div{
+    display: flex;
+    align-items: center ;
+    gap: 15px;
+    padding: 14px 20px;
+    background-color: black;
+}
+
+.booking-icons{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    font-size: 1px;
+    padding: 5px;
+}
+
+.bdetails-label{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.bdetails-value{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.booking-text{
+    width: 60%;
+}
+
+@media screen and (width<=1450px) {
+
+    .booking-details,  .booking-text{
+        width: 70%;
+    }
+
+}
+
+@media screen and (width<=1200px) {
+
+    .booking-details,  .booking-text{
+        width: 90%;
+    }
+
+    .booking-event img{
+        width: 800px;
+    }
+
+}
+
+@media screen and (width<=850px) {
+
+    .booking-details,  .booking-text{
+        width: 60%;
+    }
+
+    .booking-event img{
+        width: 700px;
+    }
+
+    .booking-details{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+}
+
+@media screen and (width<=700px) {
+    .booking-event img{
+        width: 600px;
+    }
+
+    
+    .booking-details, .booking-text{
+        width: 90%;
+    }
+}
+
+
+@media screen and (width<=650px) {
+    .booking-event img{
+        width: 500px;
+    }
+
+}
+
+@media screen and (width<=550px) {
+    .booking-event img{
+        width: 400px;
+    }
+}
+
+@media screen and (width<=450px) {
+    .booking-event img{
+        width: 300px;
+    }
+}
