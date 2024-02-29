@@ -3,7 +3,7 @@ import "./footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
+import HeadText from '../../component/header/header'
 export default function Footer() {
 	return (
 		<div className="footer">
@@ -12,9 +12,9 @@ export default function Footer() {
 
 				<div className="footer-head">
 
-					<h2>Experience & Discover Unforgettable</h2>
+					<HeadText title={'Experience & Discover Unforgettable'} type={'subheading'} headingclass='foote-rheading' />
+					<HeadText title={' Musical Events with Symphony'} type={'subheading'} headingclass='foote-rheading' />
 
-					<h2> Musical Events with Symphony</h2>
 
 				</div>
 

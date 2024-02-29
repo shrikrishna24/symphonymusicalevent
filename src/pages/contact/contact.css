@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    padding: 40px 0;
+    padding: 40px 30px;
     flex-direction: column;
     background-color: #333132;
     align-items: center;
@@ -57,4 +57,46 @@
 .contact-form .btn-primary button{
     margin-top: 20px;
     width: 150px !important;
+}
+
+@media screen and (width<=1100px) {
+    
+    .contact-lower{
+        flex-direction: column-reverse;
+    }
+    
+    .contact-lower img{
+        width: 350px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (width<650px) {
+
+    .contact-lower{
+        padding: 0 30px;        
+    }
+    
+    .contact-lower img{
+        width: 300px;
+        height: 270px;
+    }
+
+    .contact-form>div:nth-child(1){
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .contact-form , .contact-form>div:nth-child(1){
+        width: 100% !important;
+
+    }
+}
+
+@media screen and (width<375px) {
+    .contact-lower{
+        padding: 0;        
+    }
+    
 }

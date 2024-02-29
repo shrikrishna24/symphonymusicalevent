@@ -1,10 +1,8 @@
 .footer {
     background-color: #333132;
-    height: 100dvh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 30px 0;
 }
 
 .footer-1 {
@@ -12,26 +10,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
-
-.footer-head h2{
+.foote-rheading{
     color: white;
-    font-weight: 400;
     text-align: center;
-    font-size: 30px1;
 }
+
 
 .footer-2 {
-    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     color: red;
+    padding: 45px 30px;
 }
 
 .footer-socials {
@@ -53,7 +47,7 @@
 
 .terms {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     list-style-type: none;
     flex-wrap: wrap;
     width: 90%;
@@ -67,11 +61,33 @@
 }
 
 .footer-3 {
-    height: 20%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 100px 0 100px;
+    justify-content: center;
+    gap: 90px;    
+    padding: 0 25px;
     color: rgba(255,255,255,0.65);
+}
+
+@media screen and (width<=700px){
+
+    .terms li{
+        text-align: center;
+    }
+
+    .footer-1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-3{
+        text-align: center;
+    }
+}
+
+@media screen and (width<=600px){
+    .footer-3 {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
