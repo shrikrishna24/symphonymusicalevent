@@ -55,13 +55,21 @@ export default function Home() {
 			<div className="container">
 				<div className="content">
 					<div className="content-heading">
-						<HeadText title={'Symphony Musical'} type={'heading'} headingclass='artist-name' />
+						<HeadText
+							title={"Symphony Musical"}
+							type={"heading"}
+							headingclass="artist-name"
+						/>
 
 						<h2>Events</h2>
 					</div>
 
 					<div className="content-info">
-						<HeadText title={'Tribute to The Legend R.D.BURMAN'} type={'subheading'} headingclass='artist-name' />
+						<HeadText
+							title={"Tribute to The Legend R.D.BURMAN"}
+							type={"subheading"}
+							headingclass="artist-name"
+						/>
 						<div className="content-seprator"></div>
 						<p>
 							Explore and book a diverse range of musical events, from classical
@@ -87,7 +95,11 @@ export default function Home() {
 				</div>
 				<div className="about">
 					<div className="about-content">
-						<HeadText title={'About Us'} type={'heading'} headingclass='artist-name' />
+						<HeadText
+							title={"About Us"}
+							type={"heading"}
+							headingclass="artist-name"
+						/>
 
 						<div className="seprator"></div>
 
@@ -102,7 +114,11 @@ export default function Home() {
 							senses and transport you to another realm.
 						</p>
 
-						<HeadText title={'Mr. Vikas Bhosekard'} type={'subheading'} headingclass='artist-name' />
+						<HeadText
+							title={"Mr. Vikas Bhosekard"}
+							type={"subheading"}
+							headingclass="artist-name"
+						/>
 
 						<p className="evemt-org">Event Organiser</p>
 					</div>
@@ -110,13 +126,26 @@ export default function Home() {
 				<div className="event">
 					<h1>Join Our Latest Events</h1>
 					<div className="event-info">
-						<div className="event-left">{/* <img src={require()} /> */}</div>
-						<div className="event-right"></div>
+						<div className="event-left">
+							<img
+								src={require("../../assets/home/WhatsApp-Image-2023-10-17-at-4.26.46-PM-3-819x1024.jpeg")}
+								height={"500px"}
+								width={"450px"}
+							/>
+						</div>
+						<div className="event-right">
+							<h5>Home / Music Shows / Live Music Event – Kalyan, 2024</h5>
+							<h2>Bollywood Dhamaka | Tribute to R.D. Burman Golden Era of Pancham Da</h2>
+							<h2 className="amount">₹400 - ₹500</h2>
+							<h6>Location : Kalyan (W)</h6>
+							<p>Step into the New Year with the rhythmic beats and timeless melodies of the Tribute to R.D. Burman – Golden Era of Pancham Music event. Amidst the joyous celebrations, let the soulful tunes transport you to an era of musical brilliance, promising a harmonious blend of nostalgia and celebration as we welcome the dawn of a promising year ahead.</p>
+							<div><button>Book Tickets</button></div>
+						</div>
 					</div>
 				</div>
 				<div className="artist">
 					<div className="artist-info">
-						<HeadText title={"Meet Artist's"} type={'heading'} />
+						<HeadText title={"Meet Artist's"} type={"heading"} />
 
 						<div className="artist-seprator"></div>
 
@@ -136,7 +165,7 @@ export default function Home() {
 							})}
 						</div>
 					</div>
-					<div className="artist-child" >
+					<div className="artist-child">
 						<Button btnTitle={"View All artists"} />
 					</div>
 				</div>
@@ -152,7 +181,6 @@ export default function Home() {
 				</div>
 				<div className="sponsors">
 					<div className="sponser-container">
-
 						<h1>Special Thanks to Our Sponsors</h1>
 
 						<div className="sponsor-content">
